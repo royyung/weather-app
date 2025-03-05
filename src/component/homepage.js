@@ -17,7 +17,7 @@ function Homepage() {
     <React.Fragment>
       {geoLoading && <LoadingSpinner />} 
       {geoLocation && <Weather />}
-      {!geoLoading && geoError && <ErrorMessage err={geoError} />}
+      {!geoLocation && geoError && <ErrorMessage err={geoError} />}
     </React.Fragment>
   )
 }
